@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="588.0" prefWidth="700.0" style="-fx-background-color: #BA76E9#BA76E9 #BA76E9#BA76E9;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.fitnessny.gui2.AjouterprogrammeController">
+   <children>
+      <Label layoutX="280.0" layoutY="128.0" text="Nom Programme :" />
+      <Label layoutX="272.0" layoutY="194.0" text="Objectif Programme :" />
+      <Label layoutX="267.0" layoutY="267.0" text="Categorie Programme :" />
+      <Label layoutX="267.0" layoutY="348.0" text="Description Programme :" />
+      <TextField fx:id="tfNom" layoutX="456.0" layoutY="124.0" prefHeight="26.0" prefWidth="176.0" style="-fx-border-color: #F0EFF8 #F0EFF8;" />
+      <TextField fx:id="tfObjectif" layoutX="457.0" layoutY="190.0" prefHeight="26.0" prefWidth="176.0" style="-fx-border-color: #F0EFF8 #F0EFF8;" />
+      <TextField fx:id="tfCategorie" layoutX="456.0" layoutY="262.0" prefHeight="26.0" prefWidth="176.0" style="-fx-border-color: #F0EFF8 #F0EFF8;" />
+      <TextArea fx:id="taDescription" layoutX="456.0" layoutY="343.0" prefHeight="70.0" prefWidth="176.0" style="-fx-border-color: #F0EFF8 #F0EFF8;" />
+      <Button fx:id="btnAjouter" layoutX="467.0" layoutY="434.0" mnemonicParsing="false" onAction="#SaveProgramme" prefHeight="31.0" prefWidth="166.0" style="-fx-background-color: #3D9EFC#3D9EFC;" text="Ajouter " textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <AnchorPane layoutX="1.0" layoutY="-2.0" prefHeight="595.0" prefWidth="166.0" style="-fx-background-color: #3D9EFC#3D9EFC #3D9EFC#3D9EFC #3D9EFC#3D9EFC #3D9EFC#3D9EFC;">
+         <children>
+            <Button fx:id="btnAffiche" layoutX="9.0" layoutY="199.0" mnemonicParsing="false" onAction="#AfficherProgramme" prefHeight="31.0" prefWidth="148.0" style="-fx-background-color: #F5805B#F5805B;" text="Afficher" textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
