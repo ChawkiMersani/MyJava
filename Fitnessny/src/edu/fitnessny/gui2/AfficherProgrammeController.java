@@ -59,7 +59,6 @@ public class AfficherProgrammeController implements Initializable {
     
 
     private ObservableList<Programme>  AfficherProgramme() {
-        
         ProgrammeCRUD prog = new ProgrammeCRUD();
         List<Programme> p = prog.afficherProgrammeAll();
 

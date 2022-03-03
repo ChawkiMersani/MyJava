@@ -11,34 +11,36 @@
    <children>
       <AnchorPane prefHeight="506.0" prefWidth="131.0" style="-fx-background-color: #3D9EFC#3D9EFC #3D9EFC#3D9EFC;">
          <children>
-            <Button fx:id="afficherExercice" layoutX="8.0" layoutY="99.0" mnemonicParsing="false" onAction="#AfficherExercice" prefHeight="26.0" prefWidth="116.0" style="-fx-background-color: #F5805B#F5805B;" text="Afficher " />
+            <Button fx:id="afficherExercice" layoutY="99.0" mnemonicParsing="false" onAction="#AfficherExercice" prefHeight="26.0" prefWidth="147.0" style="-fx-background-color: #F5805B#F5805B;" text="Afficher " textFill="WHITE" />
+            <Button fx:id="btnModifier" layoutY="174.0" mnemonicParsing="false" onAction="#ModifierExercice" prefHeight="26.0" prefWidth="147.0" style="-fx-background-color: #F5805B#F5805B;" text="Modifier" textFill="WHITE" />
+            <Button fx:id="btnSupprimer" layoutY="240.0" mnemonicParsing="false" onAction="#SupprimerExercice" prefHeight="26.0" prefWidth="147.0" style="-fx-background-color: #F5805B#F5805B;" text="Supprimer" textFill="WHITE" />
          </children>
       </AnchorPane>
-      <Label layoutX="196.0" layoutY="271.0" text="Description : ">
+      <Label layoutX="194.0" layoutY="331.0" text="Description : ">
          <font>
             <Font size="20.0" />
          </font></Label>
-      <Button fx:id="ajoutexercice" layoutX="305.0" layoutY="423.0" mnemonicParsing="false" onAction="#SaveExercice" prefHeight="26.0" prefWidth="164.0" style="-fx-background-color: #3D9EFC#3D9EFC;" text="Ajouter " />
-      <Label layoutX="185.0" layoutY="146.0" text="Nombre de serie :">
+      <Button fx:id="ajoutexercice" layoutX="319.0" layoutY="424.0" mnemonicParsing="false" onAction="#SaveExercice" prefHeight="26.0" prefWidth="164.0" style="-fx-background-color: #3D9EFC#3D9EFC;" text="Ajouter " textFill="WHITE" />
+      <Label layoutX="156.0" layoutY="220.0" text="Nombre de serie :">
          <font>
             <Font size="20.0" />
          </font></Label>
-      <Label layoutX="178.0" layoutY="205.0" text="Nombre Repitition :">
+      <Label layoutX="401.0" layoutY="220.0" text="Nombre Repitition :">
          <font>
             <Font size="20.0" />
          </font></Label>
-      <Label layoutX="186.0" layoutY="82.0" text="Nom Exercice : ">
+      <Label layoutX="183.0" layoutY="109.0" text="Nom Exercice : ">
          <font>
             <Font size="20.0" />
          </font></Label>
-      <Label layoutX="203.0" layoutY="347.0" text="Categorie : ">
+      <Label layoutX="194.0" layoutY="165.0" text="Categorie : ">
          <font>
             <Font size="20.0" />
          </font></Label>
-      <TextField fx:id="tfNom" layoutX="334.0" layoutY="81.0" prefHeight="26.0" prefWidth="176.0" style="-fx-border-color: #F0EFF8 #F0EFF8;" />
-      <TextField fx:id="tfserie" layoutX="372.0" layoutY="145.0" prefHeight="28.0" prefWidth="62.0" style="-fx-border-color: #F0EFF8 #F0EFF8;" />
-      <TextField fx:id="tfrepit" layoutX="372.0" layoutY="204.0" prefHeight="28.0" prefWidth="62.0" style="-fx-border-color: #F0EFF8 #F0EFF8;" />
-      <TextArea fx:id="tfdesc" layoutX="334.0" layoutY="246.0" prefHeight="76.0" prefWidth="170.0" />
-      <TextField fx:id="tfcategorie" layoutX="331.0" layoutY="346.0" prefHeight="26.0" prefWidth="176.0" style="-fx-border-color: #F0EFF8 #F0EFF8;" />
+      <TextField fx:id="tfNom" layoutX="331.0" layoutY="108.0" prefHeight="26.0" prefWidth="176.0" style="-fx-border-color: #F0EFF8 #F0EFF8;" />
+      <TextField fx:id="tfserie" layoutX="331.0" layoutY="219.0" prefHeight="28.0" prefWidth="62.0" style="-fx-border-color: #F0EFF8 #F0EFF8;" />
+      <TextField fx:id="tfrepit" layoutX="573.0" layoutY="219.0" prefHeight="28.0" prefWidth="62.0" style="-fx-border-color: #F0EFF8 #F0EFF8;" />
+      <TextArea fx:id="tfdesc" layoutX="331.0" layoutY="300.0" prefHeight="76.0" prefWidth="170.0" />
+      <TextField fx:id="tfcategorie" layoutX="331.0" layoutY="164.0" prefHeight="26.0" prefWidth="176.0" style="-fx-border-color: #F0EFF8 #F0EFF8;" />
    </children>
 </AnchorPane>

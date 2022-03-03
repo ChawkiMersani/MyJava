@@ -47,6 +47,10 @@ public class AfficherExerciceController implements Initializable {
     ObservableList<Exercice> Exercice = AfficherExercice();
     @FXML
     private Button ajouterexe;
+    @FXML
+    private Button btnModifier;
+    @FXML
+    private Button btnSupprimer;
 
     /**
      * Initializes the controller class.
@@ -73,6 +77,8 @@ public class AfficherExerciceController implements Initializable {
         return FXCollections.observableList(exer);
 
     }
+    
+    
 
     @FXML
     public void AjouterExe(ActionEvent e) {
@@ -89,5 +95,15 @@ public class AfficherExerciceController implements Initializable {
             ex.printStackTrace();
         }
     }
+
+    @FXML
+    private void ModifierExercice(ActionEvent event) {
+    }
+
+    @FXML
+    private void SupprimerExercice(ActionEvent event) {
+    }
+    
+    
 
 }

@@ -17,6 +17,8 @@ import javafx.scene.Parent;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
+import javafx.scene.layout.AnchorPane;
+import javafx.scene.paint.Color;
 
 /**
  * FXML Controller class
@@ -39,6 +41,12 @@ public class AjouterexericeController implements Initializable {
     private TextField tfcategorie;
     @FXML
     private Button ajoutexercice;
+    @FXML
+    private AnchorPane ajout;
+    @FXML
+    private Button btnModifier;
+    @FXML
+    private Button btnSupprimer;
 
     /**
      * Initializes the controller class.
@@ -54,13 +62,36 @@ public class AjouterexericeController implements Initializable {
     private void SaveExercice(ActionEvent event) {
           Exercice  e = new Exercice();
           
+          if( tfNom.getText().length() <1 )
+        {
+        tfNom.setStyle("-fx-border-color: red ; -fx-border-width: 2px ;");
+        }else {
+         e.setNomExercice(tfNom.getText());
+        }
+        
+       
+          if( tfserie.getText().length() <1 )
+        {
+        tfserie.setStyle("-fx-border-color: red ; -fx-border-width: 2px ;");
+        }else {
+         e.setNbrSerie(Integer.parseInt(tfserie.getText()));
+        }
+        
+          if( tfrepit.getText().length() <1 )
+        {
+        tfrepit.setStyle("-fx-border-color: red ; -fx-border-width: 2px ;");
+        }else {
+         e.setNbrSerie(Integer.parseInt(tfrepit.getText()));
+        }
           
-        e.setNomExercice(tfNom.getText());
-        e.setNbrSerie(Integer.parseInt(tfserie.getText()));
-        e.setNbrRepetition(Integer.parseInt(tfserie.getText()));
+       
+          
         e.setDescriptionExercice(tfdesc.getText());
         e.setCategorieExercice(tfcategorie.getText());
   
+        
+        
+        
         ExerciceCRUD ex = new ExerciceCRUD(); 
         ex.ajouterExercice(e);
         
@@ -83,6 +114,15 @@ public class AjouterexericeController implements Initializable {
         }
     }
 
+    @FXML
+    private void ModifierExercice(ActionEvent event) {
+    }
+
+    @FXML
+    private void SupprimerExercice(ActionEvent event) {
+       
+    }
+    
         
         
     }
